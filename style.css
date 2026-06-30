@@ -179,6 +179,12 @@
   .brand-logo{height:3rem;width:auto;transition:height .25s ease;}
   .brand-logo path{fill:var(--navy);}
   body:has(#hub.active) .brand-logo{height:4rem;}
+
+  .collab-logos{display:inline-flex;align-items:center;gap:.6rem;}
+  .collab-x{font-size:.9rem;font-weight:700;color:var(--navy);opacity:.4;line-height:1;user-select:none;}
+  .partner-logo{height:2.5rem;width:auto;object-fit:contain;transition:height .25s ease;}
+  body:has(#hub.active) .partner-logo{height:3.2rem;}
+  body[data-theme="dark"] .partner-logo{filter:brightness(0) invert(1);}
   main{
     max-width:880px;
     margin:0 auto;
@@ -1412,6 +1418,9 @@
     .header-controls .ctrl-btn{width:1.85rem;height:1.85rem;font-size:.85rem;}
     .header-controls .theme-pill{width:3.7rem;height:1.7rem;}
     body:has(#hub.active) .brand-logo{height:2.9rem;}
+    body:has(#hub.active) .partner-logo{height:2.4rem;}
+    .partner-logo{height:2rem;}
+    .collab-logos{gap:.35rem;}
 
     .tiles{gap:.6rem;margin-top:.6rem;}
     .tile{
@@ -1436,6 +1445,7 @@
     .top{padding:.6rem .45rem .25rem;}
     body:has(#hub.active) .brand-logo{height:2.4rem;}
     .brand-logo{height:2.2rem;}
+    .partner-logo{height:1.6rem;}
     .header-controls{gap:.25rem;}
     .header-controls .theme-pill{width:3.2rem;height:1.6rem;}
     .header-controls .ctrl-btn{width:1.7rem;height:1.7rem;font-size:.8rem;}
